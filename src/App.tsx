@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-
+import anonImg from '/img/Anonymous_emblem.svg.png'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -19,6 +19,7 @@ function App() {
       <h1>Vite + React</h1>
       <h2>My first page in GitHub Pages - Gustavo Aguiar</h2>
       <h3>Um texto legal</h3>
+      <img src={anonImg} style={{ display: 'block', margin: '5px auto', maxWidth: '10g%' }} />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
